@@ -34,7 +34,7 @@ export const placeOrder = async (req, res) => {
       address,
       paymentMethod: 'COD',
       payment: false,
-      date: Date.now(),
+      date: new Date(),
     };
 
     const newOrder = new orderModel(orderData);

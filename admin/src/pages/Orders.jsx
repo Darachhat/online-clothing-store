@@ -21,6 +21,8 @@ const Orders = ({token}) => {
       const response = await axios.post(backendUrl + '/api/order/list', {}, {headers:{token}})
       if (response.data.success) {
         setOrders(response.data.orders);
+        console.log(response.data.order);
+        
       } else {
         toast.error(response.data.message)
       }
