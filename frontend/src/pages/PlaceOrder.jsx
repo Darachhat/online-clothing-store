@@ -262,7 +262,7 @@ const PlaceOrder = () => {
                 }`}
               ></p>
               <p className="text-gray-500 text-sm font-medium mx-4">
-                បង់ប្រាក់តាមអនឡាញ
+                បង់ប្រាក់តាមអ្នកដឹកជញ្ជួន
               </p>
             </div>
           </div>
