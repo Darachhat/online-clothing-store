@@ -21,8 +21,6 @@ const Orders = ({token}) => {
       const response = await axios.post(backendUrl + '/api/order/list', {}, {headers:{token}})
       if (response.data.success) {
         setOrders(response.data.orders);
-        console.log(response.data.order);
-        
       } else {
         toast.error(response.data.message)
       }
@@ -42,7 +40,7 @@ const Orders = ({token}) => {
 
     } catch (error) {
       console.log(error);
-      toast.error(response.data.message)
+      toast.error(error.data.message)
       
     }
   } 
@@ -81,7 +79,7 @@ const Orders = ({token}) => {
                 <p className='text-sm sm:text-[15px]'>Items : {order.items.length} </p>
                 <p className='mt-3'>Method : {order.paymentMethod}</p>
                 <p>Payment : { order.payment ? 'Done' : 'Pending' }</p>
-                <p>Date :  {new Date(order.date).toLocaleDateString()}</p>
+                <p>Date :  {new Date(order.createdAt).toLocaleDateString()}</p>
               </div>
               <p className='text-sm sm:text-[15px]'>{currency}{order.amount}</p>
               <select onChange={(event)=>statusHandler(event,order._id)} value={order.status} className='p-2 font-semibold'>

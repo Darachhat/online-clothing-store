@@ -262,7 +262,7 @@ const PlaceOrder = () => {
                 }`}
               ></p>
               <p className="text-gray-500 text-sm font-medium mx-4">
-                CASH ON DELIVERY
+                បង់ប្រាក់តាមអនឡាញ
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ const PlaceOrder = () => {
               type="submit"
               className="bg-black text-white px-16 py-3 text-sm"
             >
-              PLACE ORDER
+              ដាក់បញ្ជាទិញ
             </button>
           </div>
         </div>

@@ -87,37 +87,37 @@ const Collection = () => {
 
         {/* Filter Options */}
         <div className='min-w-60'>
-            <p onClick={()=>(setShowFilter(!showFilter))} className='my-2 text-xl flex items-center cursor-pointer gap-2'>FILTERS
+            <p onClick={()=>(setShowFilter(!showFilter))} className='my-2 text-xl flex items-center cursor-pointer gap-2'>ជម្រើស
               <img className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} src={assets.dropdown_icon} alt="" />
             </p>
 
             {/* Cate Filter */}
             <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
-              <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
+              <p className='mb-3 text-sm font-medium'>ផ្នែក</p>
               <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Men'} onChange={toggleCategory}/> Men
+                    <input className='w-3' type="checkbox" aria-label='' value={'Men'} onChange={toggleCategory}/> បុរស
                   </p>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Women'} onChange={toggleCategory}/> Women
+                    <input className='w-3' type="checkbox" aria-label='' value={'Women'} onChange={toggleCategory}/> ស្ត្រី
                   </p>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Kids'} onChange={toggleCategory}/> Kids
+                    <input className='w-3' type="checkbox" aria-label='' value={'Kids'} onChange={toggleCategory}/> កុមារ
                   </p>
               </div>    
             </div>
             {/* SubCategory Filter */}
             <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' : 'hidden'} sm:block`}>
-              <p className='mb-3 text-sm font-medium'>TYPE</p>
+              <p className='mb-3 text-sm font-medium'>ប្រភេទ</p>
               <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Topwear'} onChange={toggleSubCategory}/> Topwear
+                    <input className='w-3' type="checkbox" aria-label='' value={'Topwear'} onChange={toggleSubCategory}/> ខាងលើ
                   </p>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Bottomwear'} onChange={toggleSubCategory}/> Bottomwear
+                    <input className='w-3' type="checkbox" aria-label='' value={'Bottomwear'} onChange={toggleSubCategory}/> ខាងក្រោម
                   </p>
                   <p className='flex gap-2'>
-                    <input className='w-3' type="checkbox" aria-label='' value={'Winterwear'} onChange={toggleSubCategory}/> Winterwear
+                    <input className='w-3' type="checkbox" aria-label='' value={'Winterwear'} onChange={toggleSubCategory}/> រដូវរងា
                   </p>
               </div>    
             </div>
@@ -126,12 +126,12 @@ const Collection = () => {
         {/* Right Side */}
           <div className='flex-1'>
               <div className='flex justify-between text-base sm:text-2xl mb-4 '>
-                <Title text1={'ALL'} text2={'COLLECTION'}/>
+                <Title text1={'សម្លៀកបំពាក់'} text2={'ទាំងអស់'}/>
                 {/* Product Sort */}
                   <select onChange={(e)=>setSortType(e.target.value)} className='border-2 border-gray-600 text-sm px-2'>
-                    <option value="relavent">Sort by: Relavent</option>
-                    <option value="low-high">Sort by: Low to High</option>
-                    <option value="high-low">Sort by: High to Low</option>
+                    <option value="relavent">ទាក់ទង</option>
+                    <option value="low-high">តម្លៃទាបទៅខ្ពស់</option>
+                    <option value="high-low">តម្លៃខ្ពស់ទៅទាប</option>
                   </select>
               </div>
               {/* Map Products */}

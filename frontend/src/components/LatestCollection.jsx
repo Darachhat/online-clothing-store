@@ -16,9 +16,10 @@ const LatestCollection = () => {
   return (
     <div className='my-10'>
         <div className='text-center py-8 text-3xl'>
-            <Title text1={'LATEST'} text2={'COLLECTION'} />
+            <Title text1={'សម្លៀកបំពាក់'} text2={'ថ្មីៗ'} />
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi fugiat inventore velit, maxime.
+            ស្វែងរកសម្លៀកបំពាក់ថ្មីៗ ដែលមានរចនាប័ទ្មទំនើប ស្អាតល្អ និងមានគុណភាពខ្ពស់។ 
+            កុំអោយឱកាសនេះកន្លងផុតអោយសោះ!
             </p>
         </div>
 

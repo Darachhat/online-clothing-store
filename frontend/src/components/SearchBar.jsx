@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/frontend_assets/assets';
 import { useLocation } from 'react-router-dom';
@@ -26,7 +26,7 @@ const SearchBar = () => {
                     className="flex-1 outline-none bg-inherit text-sm"
                     type="text"
                     aria-label="Search products"
-                    placeholder="Search"
+                    placeholder="ស្វែងរកទំនិញ"
                 />
                 <img className="w-4" src={assets.search_icon} alt="Search icon" />
             </div>

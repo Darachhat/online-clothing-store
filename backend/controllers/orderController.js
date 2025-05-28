@@ -34,7 +34,7 @@ export const placeOrder = async (req, res) => {
       address,
       paymentMethod: 'COD',
       payment: false,
-      date: new Date(),
+      date: new Date()
     };
 
     const newOrder = new orderModel(orderData);
@@ -104,6 +104,7 @@ export const abaOrder = async (req, res) => {
       paymentMethod:'aba',
       status: "Order Placed",
       isPaid: false,
+      date: new Date()
     });
 
     await userModel.findByIdAndUpdate(userId, { cartData: {} });

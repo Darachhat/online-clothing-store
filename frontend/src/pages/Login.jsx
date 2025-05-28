@@ -90,11 +90,11 @@ const Login = () => {
       />
 
       <div className="w-full flex justify-between text-sm mt-[-8px]">
-        <p className="cursor-pointer">Forgot your password?</p>
+        <p className="cursor-pointer">ភ្លេចលេខសម្ងាត់?</p>
         {
           currentState === 'Login'
-          ? <p onClick={()=>setCurrentState('Sign Up')} className="cursor-pointer">Create account</p>
-          : <p onClick={()=>setCurrentState('Login')} className="cursor-pointer">Login Here</p>
+          ? <p onClick={()=>setCurrentState('Sign Up')} className="cursor-pointer">បង្កើតគណនីថ្មី</p>
+          : <p onClick={()=>setCurrentState('Login')} className="cursor-pointer">ចូលប្រើប្រាស់នៅទីនេះ</p>
         }
       </div>
 

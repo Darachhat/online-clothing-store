@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NewsletterBox = () => {
 
     const onSubmitHandler = (event) => {
@@ -7,17 +5,17 @@ const NewsletterBox = () => {
     }
 
   return (
-    <div className='text-center '>
-        <p className='text-2xl font-medium text-gray-800'>Subscibe now & get 20% off</p>
+    <div className='text-center'>
+        <p className='text-2xl font-medium text-gray-800'>ចុះឈ្មោះឥឡូវនេះ & ទទួលបានបញ្ចុះតម្លៃ 20%</p>
         <p className='text-gray-400 mt-3'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet recusandae necessitatibus voluptate.
-            </p> 
+            ចុះឈ្មោះដើម្បីទទួលបានព័ត៌មានថ្មីៗអំពីផលិតផលថ្មី ការផ្តល់ជូនពិសេស និងការបញ្ចុះតម្លៃសម្រាប់សមាជិកជាពិសេស។
+        </p> 
         <form onSubmit={onSubmitHandler} className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
-            <input className='w-full sm:flex-1 outline-none' type="email" placeholder='Enter your email' aria-label='' required/>
-            <button type='submit' className='bg-black text-white text-xs px-10 py-4'>SUBSCRIBE</button>
+            <input className='w-full sm:flex-1 outline-none' type="email" placeholder='បញ្ចូលអ៊ីមែលរបស់អ្នក' required/>
+            <button type='submit' className='bg-black text-white text-xs px-10 py-4'>ចុះឈ្មោះ</button>
         </form>
     </div>
   )
 }
 
-export default NewsletterBox
+export default NewsletterBox;

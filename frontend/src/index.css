@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  font-family: 'Noto Sans Khmer', sans-serif;
+}
 
 a.active hr{
     display: block;
 }
 
-*{
-    font-family: Outfit;
-}
 
 .prata-regular {
     font-family: "Prata", serif;
