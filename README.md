@@ -1,6 +1,10 @@
 ## 🛒 TOS -នេះគឺជាវេបសាយ business-to-consumer e-commerce សម្រាប់អាជីវកម្មលក់សម្លៀកបំពាក់
+![Screenshot 2025-05-31 135848](https://github.com/user-attachments/assets/4a966ea2-67da-4828-bcf5-9154099853ca)
 
-អំពីបច្ចេកវិទ្យាដែលខ្ងុំប្រើប្រាស់និង មុខងារដែលមានគឺបានបង្ហាញនៅក្រោមអាចជួយដល់អ្នកអភិវឌ្ឍន៍ អ្នករួមចំណែក និងអ្នកប្រើប្រាស់យល់បានយ៉ាងរហ័សនូវបច្ចេកវិទ្យាអ្វីដែលបានប្រើ មុខងារអ្វីដែលមាននៅក្នុងគម្រោងនេះ ដែលនិងធ្វើឱ្យការថែទាំ ឬកិច្ចសហការនាពេលអនាគតដើម្បីអភិវឌ្ឍន៍កាន់តែងាយស្រួល
+> **Description**  
+> Full-stack B2C e-commerce platform for clothing retail, developed with React, Node.js, Express, and MongoDB. Features robust authentication, product and order management, admin dashboard, and a modern, responsive UI. Demonstrates expertise in JavaScript, RESTful APIs, cloud image storage, and scalable web architecture using technologies like Tailwind CSS and Vite.
+
+> អំពីបច្ចេកវិទ្យាដែលខ្ងុំប្រើប្រាស់និង មុខងារដែលមានគឺបានបង្ហាញនៅក្រោមអាចជួយដល់អ្នកអភិវឌ្ឍន៍ អ្នករួមចំណែក និងអ្នកប្រើប្រាស់យល់បានយ៉ាងរហ័សនូវបច្ចេកវិទ្យាអ្វីដែលបានប្រើ មុខងារអ្វីដែលមាននៅក្នុងគម្រោងនេះ ដែលនិងធ្វើឱ្យការថែទាំ ឬកិច្ចសហការនាពេលអនាគតដើម្បីអភិវឌ្ឍន៍កាន់តែងាយស្រួល
 
 ---
 
