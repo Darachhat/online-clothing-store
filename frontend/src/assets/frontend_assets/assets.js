@@ -74,6 +74,7 @@ import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import aba_logo from './aba_logo.png'
+import bakong_logo from './bakong_logo.png'
 import notfound from './notfound.webp'
 
 export const assets = {
@@ -96,7 +97,8 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-    aba_logo
+    aba_logo,
+    bakong_logo
 }
 
 export const products = [

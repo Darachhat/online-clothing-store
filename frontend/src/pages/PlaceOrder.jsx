@@ -75,7 +75,7 @@ const PlaceOrder = () => {
         address: formData,
         items: orderItems,
         amount: getCartAmount() + delivery_fee,
-        paymentMethod: method === "aba" ? "aba" : "cod",
+        paymentMethod: method === "aba" ? "aba" : method === "bakong" ? "bakong" : "cod",
       };
   
       console.log("Order Data Sent:", orderData);
@@ -119,6 +119,32 @@ const PlaceOrder = () => {
             }
           } else {
             toast.error("ABA payment failed: invalid response format.");
+          }
+          break;
+        }
+
+        case "bakong": {
+          const response = await axios.post(
+            backendUrl + "/api/order/bakong",
+            orderData,
+            { headers: { token } }
+          );
+        
+          console.log("Backend Bakong Response:", response.data);
+        
+          if (response.data.includes('<form')) {
+            const tempDiv = document.createElement("div");
+            tempDiv.innerHTML = response.data;
+            const form = tempDiv.querySelector("form");
+        
+            if (form) {
+              document.body.appendChild(form); // Append form to the document
+              form.submit(); // Automatically submit the form
+            } else {
+              toast.error("Bakong payment form is missing in the response.");
+            }
+          } else {
+            toast.error("Bakong payment failed: invalid response format.");
           }
           break;
         }
@@ -251,6 +277,17 @@ const PlaceOrder = () => {
                 }`}
               ></p>
               <img className="h-10 mx-4" src={assets.aba_logo} alt="" />
+            </div>
+            <div
+              onClick={() => setMethod("bakong")}
+              className="flex items-center gap-3 border p-2 px-3 cursor-pointer"
+            >
+              <p
+                className={`w-3.5 h-3.5 border rounded-full ${
+                  method === "bakong" ? "bg-green-400" : ""
+                }`}
+              ></p>
+              <img className="h-10 mx-4" src={assets.bakong_logo} alt="" />
             </div>
             <div
               onClick={() => setMethod("cod")}
